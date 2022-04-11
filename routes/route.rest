@@ -1,0 +1,28 @@
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/6244dc3d71d2a10c9c513af8
+
+###
+
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": "Wonderful Jack",
+    "subscribedToChannel": "Web Dev Simplified"
+}
+
+###
+
+DELETE http://localhost:3000/subscribers/6244dc3d71d2a10c9c513af8
+
+###
+
+PATCH http://localhost:3000/subscribers/6244e1f72645d8f821018937
+Content-Type: application/json
+
+{
+    "name": "New Name"
+}

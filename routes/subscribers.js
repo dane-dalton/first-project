@@ -5,13 +5,14 @@ const router = express.Router()
 const Subscriber = require('../models/subscriber')
 
 //getting all subs
-router.get('/', async (req,res) => {
-    try {
-        const subscribers = await Subscriber.find()
-        res.json(subscribers)
-    } catch (err) {
-        res.status(500).json({ message: err.message})
-    }
+router.get('/', (req,res) => {
+    res.send('Hello World')
+    // try {
+    //     const subscribers = await Subscriber.find()
+    //     res.json(subscribers)
+    // } catch (err) {
+    //     res.status(500).json({ message: err.message})
+    // }
 })
 
 //getting one

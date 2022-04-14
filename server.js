@@ -19,6 +19,6 @@ app.use(express.static('public'))
 app.use(express.json())
 
 const subscribersRouter = require('./routes/subscribers')
-app.use('/subscribers', subscribersRouter)
+app.use('/', subscribersRouter)
 
 app.listen(process.env.PORT || 3000, () => console.log('Server has started'))

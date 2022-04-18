@@ -22,6 +22,6 @@ app.use(express.static('public'))
 app.use(express.json())
 
 const climbRouter = require('./routes/climb')
-app.use('/subscribers', climbRouter)
+app.use('/', climbRouter)
 
 app.listen(process.env.PORT || 3000, () => console.log('Server has started'))

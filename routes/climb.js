@@ -6,7 +6,7 @@ const Subscriber = require('../models/subscriber')
 
 //getting all subs
 router.get('/', (req,res) => {
-    res.send('Hello World')
+    res.render('index')
     // try {
     //     const subscribers = await Subscriber.find()
     //     res.json(subscribers)
